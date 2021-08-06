@@ -19,7 +19,7 @@ class FrontControllerServletV2 : HttpServlet() {
   }
 
   override fun service(request: HttpServletRequest?, response: HttpServletResponse?) {
-    println("FrontControllerServletV1.service")
+    println("FrontControllerServletV2.service")
 
     val requestURI = request?.requestURI
     val controller = controllerMap[requestURI] ?: kotlin.run {
